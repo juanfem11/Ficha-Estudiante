@@ -1,0 +1,217 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@300&display=swap');
+:root{
+  background-color:rgb(85, 161, 98);
+  --linear-gradient-header:  linear-gradient(50deg, rgb(25, 194, 81),rgb(135, 31, 145));
+  --linear-gradient-section: linear-gradient(50deg, rgba(18, 175, 89, 0.795),rgb(165, 47, 165));
+
+}
+body{
+  background-image: var(--linear-gradient-body);
+  background-repeat:repeat;
+  padding-top: 5%;
+  font-family: 'Raleway', sans-serif;
+  font-size: 12px;
+}
+.Ficha-Estudiante {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1.2fr 1.2fr 0.6fr;
+    gap: 0px 0px;
+    grid-auto-flow: row;
+    grid-template-areas:
+      "Header"
+      "Section1"
+      "Section2";
+      width:375px;
+  }
+  .Header {
+    position:relative;
+    display: grid;
+    grid-template-columns: 1.2fr 0.8fr;
+    grid-template-rows: 1fr 2.1fr;
+    gap: 0px 0px;
+    grid-auto-flow: row;
+    grid-template-areas:
+      ". Container-Picture"
+      "Headersection Container-Picture";
+    grid-area: Header;
+    background-image: var(--linear-gradient-header); 
+    border-radius: 20px;
+    border: 1px solid;
+    color: white;
+  }
+.Fila{
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content:space-around;
+}
+ .txt-social{
+  color: white;
+ } 
+h1{
+  position: absolute;
+  margin-left: 12%;
+  margin-top: 45px;
+}
+  
+
+  li{
+    list-style-type: none;
+    padding-top: 5px;
+    margin-top:-10px;
+  }
+  
+  .Container-Picture { grid-area: Container-Picture; 
+    background-image: url(/Imágenes/Perfil.jpg);
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    margin-left: 1%;
+    height:90%;
+    width: 90%;
+    margin-top: 10px;
+    border-radius: 100%;
+
+}
+  
+  .Headersection { grid-area: Headersection; 
+}
+  
+  .Section1 {
+    background-image: var(--linear-gradient-section);
+    display: grid;
+    grid-template-columns: 1.8fr 0.7fr 0.6fr;
+    grid-template-rows: auto auto auto auto auto;
+    gap: px 0px;
+    grid-auto-flow: row;
+    grid-template-areas:
+      "Activities Porcent1 Porcent2"
+      "Activity1 Porcent-Number1 Porcent-Number4"
+      "Activity2 Porcent-Number2 Porcent-Number5"
+      "Activiti3 Porcent-Number3 Porcent-Number6"
+      ". . .";
+    grid-area: Section1;
+    border-radius: 20px;
+    border: 1px solid;
+  }
+  
+  .Activities { grid-area: Activities; }
+  
+  .Porcent1 { grid-area: Porcent1; }
+  
+  .Porcent2 { grid-area: Porcent2; }
+  
+  .Activity1 { grid-area: Activity1; }
+  
+  .Activity2 { grid-area: Activity2; }
+  
+  .Activiti3 { grid-area: Activiti3; }
+  
+  .Porcent-Number1 { grid-area: Porcent-Number1; }
+  
+  .Porcent-Number2 { grid-area: Porcent-Number2; }
+  
+  .Porcent-Number3 { grid-area: Porcent-Number3; }
+  
+  .Porcent-Number4 { grid-area: Porcent-Number4; }
+  
+  .Porcent-Number5 { grid-area: Porcent-Number5; }
+  
+  .Porcent-Number6 { grid-area: Porcent-Number6; }
+  
+  .Section2 {
+    background-image: var(--linear-gradient-section);
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+    grid-template-rows: auto;
+    gap: 0px 0px;
+    grid-auto-flow: row;
+    grid-template-areas:
+      "img1 Img2 Img3 Img4 img5 img6";
+    grid-area: Section2;
+    border-radius: 20px;
+    border: 1px solid;
+    justify-self: stretch;
+    height: 60%;
+    align-items: stretch;
+
+  }
+.Title-activities{
+  
+  margin-left: 3%;
+}
+.txt-Activity{
+  color: black;
+}
+.Activity1{
+  margin-left: 3%;
+  border-top: 1px solid;
+  border-bottom: 1px solid;
+}
+.Activity2, .Activity3{
+  margin-left: 3%;
+  border-bottom: 1px solid;
+}
+.Porcent1, .Porcent2{
+  border-bottom: 1px solid;
+}
+.Porcent-Number1, .Porcent-Number2, .Porcent-Number3, .Porcent-Number4, .Porcent-Number5, .Porcent-Number6{
+  border-bottom: 1px solid;
+}
+  
+  .img1 { grid-area: img1;
+
+}
+.Img2 { grid-area: Img2; 
+}
+  
+.Img3 { grid-area: Img3; 
+}
+
+.Img4 { grid-area: Img4; 
+ }
+
+.img5 { grid-area: img5;
+ }
+
+.img6 { grid-area: img6;   
+ }
+
+.i1{
+    width: 100%;
+    border-radius:50%;
+    overflow: hidden;
+}
+.i2{
+  width: 100%;
+  border-radius:50%;
+  overflow: hidden;
+}
+.i3{
+  width: 100%;
+  border-radius:50%;
+  overflow: hidden;
+}
+.i4{
+  width: 100%;
+  border-radius:50%;
+  overflow: hidden;
+}
+.i5{
+  width: 100%;
+  border-radius:50%;
+  overflow: hidden;
+}
+.i6{
+  width: 100%;
+  border-radius:50%;
+  overflow: hidden;
+}
+.html-icon, .css-icon, .javascript-icon, .ui-icon, .ux-icon,
+.profileuser-icon{
+    width: 100%;
+    display: flex;
+    justify-content:center;
+    align-items: center;
+}
+  
